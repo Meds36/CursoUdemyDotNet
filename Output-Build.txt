@@ -1,0 +1,6 @@
+﻿1>------ Build started: Project: ConsoleApp1, Configuration: Debug Any CPU ------
+1>Exercicios\Pessoas.cs(11,23,11,28): warning CS0649: Field 'Pessoas.idade' is never assigned to, and will always have its default value 0
+1>Exercicios\Pessoas.cs(10,23,10,27): warning CS0649: Field 'Pessoas.nome' is never assigned to, and will always have its default value 0
+1>ConsoleApp1 -> C:\Estudos\OrientacaoObjct\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.dll
+1>Done building project "ConsoleApp1.csproj".
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

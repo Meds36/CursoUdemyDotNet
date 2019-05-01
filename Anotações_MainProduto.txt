@@ -1,0 +1,41 @@
+// Produto p = new Produto("TV", 500.0, 10 );
+
+            Console.WriteLine("---- Exercicio 3 - Produtos! ----");
+            Console.WriteLine("Entre com os dados do produto");
+            Console.Write("Nome: ");
+            string nome = Console.ReadLine();
+            Console.Write("Preço: ");
+            double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //Console.Write("Quantidade no estoque: ");
+            //int quantidade = int.Parse(Console.ReadLine());
+
+            Produto p = new Produto(nome, preco);
+
+            Produto p2 = new Produto
+            {
+                Nome = "TV",
+                Preco = 20.00,
+                Quantidade = 1
+
+
+            };
+
+         
+            Console.WriteLine("");
+            Console.WriteLine("Dados do produto: " + p);
+            Console.WriteLine("");
+
+            Console.Write("Digite o número de produtos a ser adicionados em estoque: ");
+            int qtd = int.Parse(Console.ReadLine());
+            p.AdicionarProdutos(qtd);
+            Console.WriteLine("");
+            Console.WriteLine("Dados atualizados: " + p);
+
+            Console.WriteLine("");
+            Console.Write("Digite o número de produtos a serem removidos do estoque: ");
+            qtd = int.Parse(Console.ReadLine());
+
+            p.RemoverProdutos(qtd);
+            Console.WriteLine("Dados atualizados: " + p);
+
+            Console.ReadKey();
